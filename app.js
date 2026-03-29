@@ -1,8 +1,8 @@
 // DỮ LIỆU SẢN PHẨM (MENU)
-const C_HUE_BANNER = "C:\\Users\\ADMIN\\.gemini\\antigravity\\brain\\555c661c-4a66-411d-a2ec-f58922d64fae\\hue_food_banner_1774340821052.png";
-const C_BUN_BO = "C:\\Users\\ADMIN\\.gemini\\antigravity\\brain\\555c661c-4a66-411d-a2ec-f58922d64fae\\bun_bo_hue_1774340887709.png";
-const C_BANH_BEO = "C:\\Users\\ADMIN\\.gemini\\antigravity\\brain\\555c661c-4a66-411d-a2ec-f58922d64fae\\banh_beo_tray_1774340913948.png";
-const C_HUE_RES = "C:\\Users\\ADMIN\\.gemini\\antigravity\\brain\\555c661c-4a66-411d-a2ec-f58922d64fae\\hue_restaurant_1774340937853.png";
+const C_HUE_BANNER = "images/amthuchue.jpeg";
+const C_BUN_BO = "images/bunbo.jpg";
+const C_BANH_BEO = "images/banhbeo.jpeg";
+const C_HUE_RES = "images/nha-hang-o-hue.webp";
 
 const products = [
     // BÁNH HUẾ (Category: banh-hue)
@@ -11,7 +11,7 @@ const products = [
         title: 'Bánh Bèo Chén (Mẹt 8 chén)',
         category: 'banh-hue',
         price: 40000,
-        img: 'https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=600&auto=format&fit=crop',
+        img: 'images/banhbeo.jpeg',
         desc: 'Những chiếc bánh nhỏ xinh trong chén sành, phủ lên trên là tôm cháy thơm lừng và mỡ hành béo ngậy.',
         rating: 4.9,
         sold: 1250,
@@ -26,7 +26,7 @@ const products = [
         title: 'Bánh Bột Lọc Trần (10 cái)',
         category: 'banh-hue',
         price: 55000,
-        img: 'https://images.unsplash.com/photo-1626844131082-256783844137?q=80&w=600&auto=format&fit=crop',
+        img: 'images/banhbotloc.jpg',
         desc: 'Vỏ bánh trong suốt, dai giòn sần sật bọc lấy nhân tôm thịt đậm đà, ăn kèm nước mắm chua ngọt cay nồng.',
         rating: 4.8,
         sold: 840,
@@ -38,7 +38,7 @@ const products = [
         title: 'Bánh Nậm Lá Dong (5 cái)',
         category: 'banh-hue',
         price: 40000,
-        img: 'https://mms.img.susercontent.com/vn-11134513-7r98o-lsvdf3utj44905@resize_ss1242x600!@crop_w1242_h600_cT',
+        img: 'images/banhnam.jpg',
         desc: 'Bánh mỏng gói trong lá dong, thơm mùi tôm băm và bột gạo mịn màng, tan ngay trên đầu lưỡi.',
         rating: 4.7,
         sold: 620,
@@ -49,7 +49,7 @@ const products = [
         title: 'Bánh Khoái Hoàng Cung',
         category: 'banh-hue',
         price: 45000,
-        img: 'https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?q=80&w=600&auto=format&fit=crop',
+        img: 'images/banhkhoai.jpg',
         desc: 'Vỏ bánh dày chiên giòn rụm, nhân tôm thịt đầy đặn, ăn cùng nước lèo tương đậu sền sệt đậm đà.',
         rating: 4.8,
         sold: 430,
@@ -60,7 +60,7 @@ const products = [
         title: 'Bánh Xèo Miền Trung',
         category: 'banh-hue',
         price: 40000,
-        img: 'https://images.unsplash.com/photo-1563379091339-03b21bc4a4f8?q=80&w=600&auto=format&fit=crop',
+        img: 'images/banhxeo.jpg',
         desc: 'Vỏ bánh vàng ươm, giòn rụm bên ngoài, nhân tôm thịt và giá đỗ tươi ngon bên trong.',
         rating: 4.6,
         sold: 310,
@@ -89,7 +89,7 @@ const products = [
         title: 'Bún Bò Huế (Thường)',
         category: 'mon-chinh',
         price: 50000,
-        img: 'https://images.unsplash.com/photo-1563379091339-03b21bc4a4f8?q=80&w=600&auto=format&fit=crop',
+        img: 'images/bunbo.jpg',
         desc: 'Hương vị đậm đà đặc trưng của mắm ruốc Huế, nước dùng ngọt thanh, thịt bò mềm mọng.',
         rating: 4.8,
         sold: 1500,
@@ -100,7 +100,7 @@ const products = [
         title: 'Bún Hến Mai Thúc Loan',
         category: 'mon-chinh',
         price: 35000,
-        img: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=600&auto=format&fit=crop',
+        img: 'images/bunhen.jpg',
         desc: 'Sự kết hợp giữa nước hến ngọt thanh, vị cay nồng của ớt và rau sống tươi mát.',
         rating: 4.7,
         sold: 890,
@@ -112,7 +112,7 @@ const products = [
         title: 'Bánh Canh Nam Phổ',
         category: 'mon-chinh',
         price: 40000,
-        img: 'https://images.unsplash.com/photo-1626844131082-256783844137?q=80&w=600&auto=format&fit=crop',
+        img: 'images/banhcanh.jpg',
         desc: 'Nước dùng sền sệt, vị ngọt thanh từ tôm và thịt băm, sợi bánh dai mềm đặc trưng.',
         rating: 4.8,
         sold: 560,
@@ -125,7 +125,7 @@ const products = [
         title: 'Cơm Âm Phủ Cung Đình',
         category: 'mon-com',
         price: 60000,
-        img: 'https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?q=80&w=600&auto=format&fit=crop',
+        img: 'images/ComCungDinh.jpg',
         desc: 'Món cơm cung đình với 7 màu sắc từ thịt nướng, chả lụa, tôm cháy, trứng rán rạng rỡ.',
         rating: 4.9,
         sold: 420,
@@ -136,7 +136,7 @@ const products = [
         title: 'Cơm Hến Vĩ Dạ',
         category: 'mon-com',
         price: 35000,
-        img: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=600&auto=format&fit=crop',
+        img: 'images/com-hen.jpg',
         desc: 'Hến xào thơm, tóp mỡ giòn tan, lạc rang bùi béo ăn kèm nước dùng hến nóng hổi.',
         rating: 4.7,
         sold: 720,
@@ -175,7 +175,7 @@ const products = [
         category: 'combo',
         price: 159000,
         oldPrice: 205000,
-        img: 'https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?q=80&w=600&auto=format&fit=crop',
+        img: 'images/combo.jpg',
         desc: '2 tô Bún Bò đặc biệt, 1 mẹt đủ loại Bánh Huế và 4 ly Trà thảo mộc thanh mát.',
         rating: 4.9,
         sold: 520,

@@ -182,13 +182,18 @@ header {
     transition: var(--transition);
 }
 header.scrolled {
-    padding: 5px 0;
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 .header-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
+    transition: height 0.3s ease;
+}
+header.scrolled .header-inner {
+    height: 60px; /* Compress seamlessly when scrolled */
 }
 .logo h1 {
     font-size: 2rem;
@@ -199,7 +204,7 @@ header.scrolled {
 
 .desktop-nav ul {
     display: flex;
-    gap: 30px;
+    gap: 20px; /* Reduced from 30px to prevent overflow on smaller laptops */
 }
 .desktop-nav a {
     font-weight: 600;
@@ -266,6 +271,19 @@ header.scrolled {
     display: none;
     font-size: 1.5rem;
     color: var(--dark-bg);
+}
+
+/* Tablet & Mobile Header Adjustments */
+@media (max-width: 991px) {
+    .desktop-nav {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .header-inner {
+        padding: 0 10px;
+    }
 }
 
 /* Mobile Nav */
@@ -1092,12 +1110,7 @@ footer a:hover {
 .mt-5 { margin-top: 3rem; }
 .section-footer { margin-top: 50px; }
 
-/* Header Improvements */
-header.scrolled {
-    background: rgba(255, 255, 255, 0.98);
-    height: 70px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
+/* Header Improvements Consolidated */
 
 /* Micro-interactions */
 .menu-item:hover .add-btn { background: var(--secondary-color); color: white; transform: rotate(90deg); }
@@ -1130,18 +1143,18 @@ header.scrolled {
 
 .menu-tabs-wrapper {
     position: sticky;
-    top: 69px; 
+    top: 60px; /* Matches the scrolled header height */
     z-index: 100;
-    margin: 50px -20px 40px -20px; /* Increased to 50px for better breathing room */
+    margin: 50px 0 40px 0; 
     padding: 18px 10px;
     background: rgba(255, 255, 255, 0.94);
     backdrop-filter: blur(25px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.03); /* More subtle shadow */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.03); 
     border-bottom: 1px solid rgba(0,0,0,0.05);
     transition: all 0.4s ease;
 }
 @media (max-width: 768px) {
-    .menu-tabs-wrapper { top: 58px; margin: 10px -15px 30px -15px; }
+    .menu-tabs-wrapper { top: 60px; margin: 10px 0 30px 0; }
     .menu-tabs {
         justify-content: flex-start;
         overflow-x: auto;
@@ -1537,4 +1550,93 @@ header.scrolled {
 @keyframes highlightFade {
     0% { background-color: rgba(212, 175, 55, 0.15); }
     100% { background-color: transparent; }
+}
+
+/* Blog Custom Grid Layout */
+.blog-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.blog-featured-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.blog-featured-img-col {
+    width: 58.33%;
+}
+.blog-featured-body-col {
+    width: 41.67%;
+}
+.blog-body-featured {
+    padding: 3rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.blog-cards-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.blog-card-col {
+    display: flex;
+    height: 100%;
+}
+
+/* Tags & Misc */
+.blog-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.blog-tag {
+    background: #f0f0f0;
+    color: var(--secondary-color);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.blog-divider {
+    height: 1px;
+    background: var(--light-gray);
+    margin: 20px 0;
+}
+.blog-body {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    flex-grow: 1;
+}
+.blog-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+/* Mobile Adjustments for Blog */
+@media (max-width: 991px) {
+    .blog-featured-img-col, 
+    .blog-featured-body-col {
+        width: 100%;
+    }
+    .blog-img-featured {
+        min-height: 250px;
+    }
+    .blog-body-featured {
+        padding: 20px;
+    }
+    .blog-cards-row {
+        grid-template-columns: 1fr;
+    }
+    .blog-heading-lg {
+        font-size: 1.4rem;
+    }
+    .section-desc {
+        padding: 0 15px;
+    }
 }

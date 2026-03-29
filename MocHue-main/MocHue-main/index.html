@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mộc Huế - Tinh Hoa Ẩm Thực Miền Trung |
+        Huế Biên Hòa</title>
+    <meta name="description"
+        content="Thưởng thức hương vị bánh bèo, bánh nậm, bún bò Huế chuẩn vị ngay tại Biên Hòa. Đặt món online, giao hàng tận nơi nhanh chóng.">
+    <meta name="keywords" content="bánh Huế Biên Hòa, ăn vặt Huế ngon, bún bò Huế, bánh bèo, ẩm thực miền Trung">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Top Bar (Flash Sale / Contact) -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <span id="flash-sale-msg"><i class="fa-solid fa-bolt text-yellow"></i> Flash Sale: Khung giờ vàng 11h-13h và
+                16h-18h giảm ngay 15% toàn menu!</span>
+            <div class="top-links">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-solid fa-phone"></i> 0909.XXX.XXX</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header id="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="#home">
+                    <h1>Mộc Huế<span></span></h1>
+                </a>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#home">Trang chủ</a></li>
+                    <li><a href="#menu">Thực đơn</a></li>
+                    <li><a href="#about">Câu chuyện</a></li>
+                    <li><a href="#blog">Góc ẩm thực</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="user-points d-none-mobile" title="Tích điểm khách hàng">
+                    <i class="fa-solid fa-crown text-yellow"></i> <span id="user-points-display">0</span>
+                </div>
+                <div class="cart-icon" id="cart-toggle">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </div>
+                <a href="#menu" class="btn btn-primary btn-sm d-none-mobile">Đặt Ngay</a>
+                <button class="menu-toggle" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="#home" class="mobile-link">Trang chủ</a></li>
+            <li><a href="#menu" class="mobile-link">Thực đơn</a></li>
+            <li><a href="#about" class="mobile-link">Câu chuyện</a></li>
+            <li><a href="#blog" class="mobile-link">Góc ẩm thực</a></li>
+            <li><a href="#contact" class="mobile-link">Liên hệ</a></li>
+            <li>
+                <hr style="margin: 10px 0; opacity: 0.2;">
+            </li>
+            <li><a href="#menu" class="mobile-link btn btn-primary text-white" style="text-align:center;">Đặt Món
+                    Ngay</a></li>
+        </ul>
+    </div>
+
+    <!-- Dynamic Content Container -->
+    <div id="app-content">
+        <!-- Modules will be loaded here via JavaScript -->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h2 class="footer-logo">Mộc Huế<span></span></h2>
+                <p>Hương vị truyền thống - Đậm tình Huế mộng mơ. Nơi gìn giữ tinh hoa ẩm thực Cung đình giữa lòng Biên
+                    Hòa.</p>
+                <div class="social-links mt-3">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Thông Tin Liên Hệ</h3>
+                <ul class="contact-details" style="list-style:none; padding:0;">
+                    <li style="margin-bottom:10px;"><i class="fa-solid fa-location-dot text-yellow"></i> 123 Võ Thị Sáu,
+                        Biên Hòa, Đồng Nai</li>
+                    <li style="margin-bottom:10px;"><i class="fa-solid fa-phone text-yellow"></i> Hotline: 0909.123.456
+                    </li>
+                    <li style="margin-bottom:10px;"><i class="fa-solid fa-clock text-yellow"></i> Mở cửa: 06:30 - 22:00
+                        (Mỗi ngày)</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Tuyển Dụng & Hợp Tác</h3>
+                <ul style="list-style:none; padding:0;">
+                    <li><a href="#">Tuyển Nhân Viên Phục Vụ</a></li>
+                    <li><a href="#">Tuyển Đầu Bếp/Bếp Phó</a></li>
+                    <li><a href="#contact">Hợp Tác Nhượng Quyền</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 Mộc Huế - Tinh Hoa Ẩm Thực Miền Trung. Bảo lưu mọi quyền.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CART MODAL / DRAWER -->
+    <!-- CART SIDEBAR (DRAWER) -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h4 class="cart-title"><i class="fa-solid fa-basket-shopping me-2"></i>Giỏ Hàng Của Bạn</h4>
+            <button class="close-cart" id="close-cart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="cart-items p-3 overflow-y-auto" id="cart-items" style="max-height: calc(100vh - 400px);">
+            <!-- Items injected by JS -->
+        </div>
+
+        <div class="cart-summary-modern mt-auto">
+            <div id="ship-progress" class="ship-not-reached">
+                Mua thêm <b>50.000đ</b> để được FreeShip 🚚
+            </div>
+
+            <div class="summary-line">
+                <span>Tạm tính:</span>
+                <span id="cart-subtotal" class="font-bold">0đ</span>
+            </div>
+
+            <div id="discount-wrapper" class="summary-line text-green" style="display:none;">
+                <span>Ưu đãi (Giảm 15%):</span>
+                <span id="cart-discount" class="font-bold">-0đ</span>
+            </div>
+
+            <div class="summary-line">
+                <span>Phí giao hàng:</span>
+                <span class="text-green font-bold">Miễn phí</span>
+            </div>
+
+            <div class="summary-line total">
+                <span>Tổng cộng:</span>
+                <span id="cart-total">0đ</span>
+            </div>
+
+            <div class="cart-combo-banner mt-3" id="cart-combo-banner" style="display: none; border-radius:12px">
+                <i class="fa-solid fa-gift me-2"></i> Bạn được giảm 15% cho đơn hàng này!
+            </div>
+
+            <button class="btn-checkout-primary mt-4" id="btn-checkout">
+                Xác Nhận Đặt Hàng
+            </button>
+        </div>
+    </div>
+
+    <!-- PRODUCT DETAIL MODAL (Toppings/Quantity) -->
+    <div class="modal-overlay" id="product-modal-overlay"></div>
+    <div class="product-modal" id="product-modal">
+        <button class="close-modal" id="close-product-modal"><i class="fa-solid fa-xmark"></i></button>
+        <div class="modal-content-grid">
+            <div class="modal-img-container">
+                <img id="modal-img" src="" alt="">
+            </div>
+            <div class="modal-details">
+                <h3 id="modal-title">Tên món</h3>
+                <p id="modal-price" class="text-red font-bold text-xl">0đ</p>
+                <p id="modal-desc" class="text-gray text-sm mt-2">Mô tả</p>
+
+                <div class="options-group mt-4" id="toppings-container" style="display: none;">
+                    <h4>Thêm Tùy Chọn</h4>
+                    <div id="toppings-list">
+                        <!-- Checkboxes injected by JS -->
+                    </div>
+                </div>
+
+                <div class="quantity-group mt-4">
+                    <h4>Số lượng</h4>
+                    <div class="qty-control">
+                        <button id="qty-minus">-</button>
+                        <input type="number" id="qty-input" value="1" min="1" readonly>
+                        <button id="qty-plus">+</button>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary w-100 mt-4" id="btn-add-to-cart">Thêm Vào Giỏ - <span
+                        id="modal-total-price">0đ</span></button>
+                
+                <!-- Cross-sell suggestion -->
+                <div id="cross-sell-container" class="mt-4" style="border-top: 1px dashed #ddd; padding-top: 15px;">
+                    <p class="text-sm font-bold"><i class="fa-solid fa-thumbs-up text-yellow"></i> Gợi ý món ngon kèm theo:</p>
+                    <div id="cross-sell-item" class="p-2 bg-light rounded mt-2 d-flex align-items-center gap-2" style="cursor:pointer; border-radius: 8px;">
+                        <!-- Injected by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHECKOUT MODAL -->
+    <div class="modal-overlay" id="checkout-modal-overlay"></div>
+    <div class="product-modal checkout-modal" id="checkout-modal">
+        <button class="close-modal" id="close-checkout-modal"><i class="fa-solid fa-xmark"></i></button>
+        <div class="checkout-content">
+            <h3 class="mb-4">Thông Tin Giao Hàng</h3>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label>Họ tên (*)</label>
+                    <input type="text" id="cust-name" required placeholder="Nhập họ và tên">
+                </div>
+                <div class="form-group">
+                    <label>Số điện thoại (*)</label>
+                    <input type="tel" id="cust-phone" required placeholder="Nhập số điện thoại">
+                </div>
+                <div class="delivery-type-toggle mt-3 mb-3">
+                    <label class="radio-label">
+                        <input type="radio" name="delivery_type" value="delivery" checked> Giao tận nơi
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="delivery_type" value="pickup"> Đến lấy
+                    </label>
+                </div>
+                <div class="form-group" id="address-group">
+                    <label>Địa chỉ nhận hàng</label>
+                    <textarea id="cust-address" rows="2" placeholder="Nhập địa chỉ của bạn"></textarea>
+                </div>
+
+                <h4 class="mt-4 mb-2">Phương thức thanh toán</h4>
+                <div class="payment-methods">
+                    <label class="radio-label d-block mb-2">
+                        <input type="radio" name="payment_method" value="cash" checked> Tiền mặt khi nhận hàng (COD)
+                    </label>
+                    <label class="radio-label d-block mb-2">
+                        <input type="radio" name="payment_method" value="bank"> Chuyển khoản ngân hàng
+                    </label>
+                    <label class="radio-label d-block mb-2">
+                        <input type="radio" name="payment_method" value="qr"> Quét mã QR (MoMo / VNPay)
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 mt-4 text-xl">Xác Nhận Đơn Hàng - <span
+                        id="checkout-final-total">0đ</span></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Chat Widgets -->
+    <a href="#" class="chat-widget zalo-chat"><i class="fa-solid fa-comment-dots"></i></a>
+    <a href="#" class="chat-widget messenger-chat"><i class="fa-brands fa-facebook-messenger"></i></a>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast">Đã thêm vào giỏ hàng!</div>
+
+
+
+    <!-- Upsell Modal (Quick Suggestion) -->
+    <div class="modal-overlay" id="upsell-modal-overlay"></div>
+    <div class="product-modal upsell-modal" id="upsell-modal" style="max-width: 400px; height: auto; top: 50%; padding: 25px;">
+        <div class="text-center">
+            <div class="upsell-icon" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 15px;">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3 style="font-size: 1.5rem;">Ăn Ngon Hơn Cùng...</h3>
+            <p id="upsell-msg" class="mb-4">Thêm một ly Trà Cung Đình thảo mộc giải nhiệt chỉ với 15k?</p>
+            <div id="upsell-target" class="mb-4">
+                <!-- Injected by JS -->
+            </div>
+            <div class="d-flex gap-2">
+                <button class="btn btn-outline w-100" onclick="closeUpsell()">Bỏ qua</button>
+                <button class="btn btn-primary w-100" id="btn-upsell-add">Thêm Ngay!</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Cart Summary (Desktop & Universal) -->
+    <div class="floating-cart" id="floating-cart-summary" style="display:none;">
+        <div class="cart-summary" onclick="toggleCart()">
+            <div class="cart-header-left d-flex align-items-center gap-2">
+                <div class="cart-badge" id="floating-cart-badge">0</div>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <span class="cart-summary-text d-none-desktop">Xem Giỏ Hàng</span>
+            <div class="cart-total-price" id="floating-cart-total">0đ</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
